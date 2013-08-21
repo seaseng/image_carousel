@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+  <script type="text/javascript" src="application.js"></script>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Image Carousel</title>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="carousel_controls">
+      <a href="#" id="previous_frame">&lt;</a>
+      <a href="#" id="next_frame">&gt;</a>
+
+      <!-- <a href="#" id="previous_frame"><img src='arrows-2x.png' width='128' height='auto'></a>
+      <a href="#" id="next_frame">&gt;</a> -->
+    </div>
+    
+    <div class="carousel">
+      <ul class="frames">
+        <li>
+          <h2>Zip</h2>
+          <img src="http://f.cl.ly/items/3e332b2e0B3d311a1U1X/wargames.jpg" />
+        </li>
+        <li>
+          <h2>Zap</h2>
+          <img src="http://f.cl.ly/items/2h0Q3P0t0B3Q0N370u43/businessdude.jpg" />
+        </li>
+        <li>
+          <h2>Zop</h2>
+          <img src="http://f.cl.ly/items/3i2V2V0D3n293d0y2y0U/tron.jpg" />
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
