@@ -13,7 +13,7 @@ $(function(){
     //newly added pane will slide off to left
     $(".frames").prepend($(".frames li:last-child"));
     $('.frames').css('left', '-360px');
-    $('.frames').animate({'left': '+=360px'}, 'slow', function() {
+    $('.frames').animate({'left': '+=360px'}, 'fast', function() {
       $self.on('click', slideLeft); //allow clicks after animation complete
     });
     
@@ -23,10 +23,10 @@ $(function(){
 
   function slideRight(event){
     event.preventDefault();
-    $('.frames').animate({'left': '-=360px'}, 'slow', function() {
+    $('.frames').animate({'left': '-=360px'}, 'fast', function() {
       $(".frames").append($(".frames li:first-child"));
       // debugger;
-      $('.frames').css('left', '0');
+      $('.frames').css('left', '+=360px');
     });
   }
   
